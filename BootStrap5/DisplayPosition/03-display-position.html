@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <title>Bootstrap Sandbox | Display & Position</title>
   </head>
   <body>
@@ -12,64 +12,64 @@
       <h1 class="mb-5">Display & Position</h1>
 
       <!-- Display None -->
-      <p class="">This text is hidden</p>
+      <p class="d-none">This text is hidden</p>
 
       <br /><br />
 
       <!-- Display Inline -->
-      <div class="">This text is inline</div>
-      <div class="">This text is inline</div>
+      <div class="d-inline">This text is inline</div>
+      <div class="d-inline">This text is inline</div>
 
       <br /><br />
 
       <!-- Display Block -->
-      <span class="">This span is block</span>
-      <span class="">This span is block</span>
+      <span class="d-block">This span is block</span>
+      <span class="d-block">This span is block</span>
 
       <br /><br />
 
       <!-- Display Inline Block -->
-      <span class="" style="width: 500px">This span is inline-block</span>
-      <span class="">This span is inline-block</span>
+      <span class="d-inline-block" style="width: 500px">This span is inline-block</span>
+      <span class="d-inline-block">This span is inline-block</span>
 
       <br /><br />
 
       <!-- Hide on small screens -->
-      <div class="">This div is hidden on mobile</div>
+      <div class="d-none d-md-block">This div is hidden on mobile</div>
 
       <br /><br />
 
       <!-- Hide on medium screens and up -->
-      <div class="">This div is hidden on medium screens and up</div>
+      <div class="d-block d-md-none">This div is hidden on medium screens and up</div>
 
       <br /><br />
 
       <!-- POSITIONING -->
 
       <!-- Position Static -->
-      <p class="">This text is static</p>
+      <p class="position-static">This text is static</p>
 
       <br /><br />
 
       <div
-        class=""
+        class="position-relative"
         style="height: 200px; width: 200px; background: #ccc"
-      ></div>
+      ><p class="position-absolute start-0 bottom-0" style="top: 40px;">Hello Inside</p></div>
 
       <br /><br />
 
-      <!-- Position Fixed -->
-      <p class="">This text is fixed</p>
+      <!-- Position Fixed --> // Relative to view-port
+      <p class="" style="bottom:50px">This text is fixededddd</p>
 
       <br /><br />
 
-      <p class="">This text is fixed top</p>
-      <p class="">This text is fixed bottom</p>
+      <p class="fixed-top">This text is fixed top</p>
+      <p class="fixed-bottom">This text is fixed bottom</p>
 
       <br /><br />
 
       <!-- Sticky Top -->
-      <p class="">This text is sticky top</p>
+      <p class="sticky-top">This text is sticky top</p>
 
       <br /><br />
 
@@ -138,6 +138,6 @@
     </div>
     <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
